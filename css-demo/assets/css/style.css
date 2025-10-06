@@ -15,13 +15,66 @@ html {
 body {
   background-color:#ffffff;
   font-family: "Montserrat", sans-serif;
+  margin:0;
 }
 header.primary {
-  background:#504e4e;
+  background:#0EA7E8;
   color:#ffffff;
   text-align:center;
   text-shadow: 1px 1px #000000;
+  /*long form*/
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  /*Single value short hand*/
+  padding: 40px;
+  /* T,R,B,L */
+  padding: 20px 40px 20px 40px;
+   /* Two Value Top/Bottom / L/R */
+  padding: 20px 40px;
 }
+
+header.primary h1{
+font-size:2.4rem;
+color:#ffffff;  
+/* top | left and right | bottom */
+margin: 20px 0 0; 
+}
+
+header.primary a{
+  color:#ffffff;
+  text-decoration:none;
+}
+
+header.primary h2{
+  font-size:1.3rem;
+  letter-spacing:.3px;
+  margin:0;
+}
+
+header.primary nav{}
+header.primary nav ul{
+  padding:0;
+  display:flex;
+  flex-direction: row;
+  justify-content:space-around;
+}
+
+header.primary nav li{
+  list-style-type: none;
+}
+
+header.primary nav a{
+color:ffffff;
+font-size:.9rem;
+background:rgba(0,0,0,.4);
+padding:5px 7.5px;
+border-radius: 10px;
+border: 3px solid #0E1DE8 
+}
+
+
 
 /*#0EA7E8
 
