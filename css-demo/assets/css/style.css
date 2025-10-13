@@ -21,7 +21,7 @@ html {
 
 /* ---------------Responsive Images----------------- */
 img {
-  max-width: 100%;
+  max-width: 100%; /* Use percent for stuff inside, use viewport more globally */
   height: auto;
   display: block;
 }
