@@ -127,6 +127,47 @@ figure{
   color: #0E62E8;
 }
 
+aside[role="complementary"]{
+  background:#460EE8;
+  color:#ffffff;
+  padding:40px 0;
+  margin-left:20px;
+  flex:1; /* Take up remaining space */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+}
+
+aside .container{
+  display:flex;
+  flex-direction:row;
+  gap:40px;
+}
+
+aside .container a{
+color:#ffffff;
+}
+
+aside .container a:last-child{
+  display:block;
+  text-align:right;
+  margin-top:20px;
+}
+
+article.widget footer{
+  display:none;
+}
+
+/*#colophon{}
+footer[role="contentinfo"]{}
+footer.primary{}
+footer:last-child{}*/
+
+#colophon{
+background-color: #3b638b;
+padding:5px;
+color:#ffffff;
+text-align:center;
+text-shadow:1px 1px #000000;  
+}
 
 
 /*---------------Media Queries-----------------*/
