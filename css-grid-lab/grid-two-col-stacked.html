@@ -33,6 +33,31 @@
       max-width: 80vw;
       margin: 20px auto;
     }
+
+    main {
+      grid-template-columns: 2fr 1fr; /* Content takes up more space */
+    }
+
+    header.primary {
+      grid-area: 1 / 1 / 2 / 3; /* row-start / col-start / row-end / col-end */
+    }
+
+    #content {
+      grid-area: 2 / 1 / 4 / 2; /* row-start / col-start / row-end / col-end */
+    }
+
+    #blog {
+      grid-area: 2 / 2 / 3 / 3; /* row-start / col-start / row-end / col-end */
+    }
+
+    aside {
+      grid-area: 3 / 2 / 4 / 3; /* row-start / col-start / row-end / col-end */
+    }
+
+    footer.primary {
+      grid-area: 4 / 1 / 5 / 3; /* row-start / col-start / row-end / col-end */
+    }
+    
   </style>
 
 </head>
