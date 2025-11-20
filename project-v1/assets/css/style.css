@@ -131,7 +131,12 @@ header.primary nav a:hover {
 }
 
 /* --- SECTIONS --- */
-#intro h2 {
+#intro h2, #holds-intro h2 { /* Section Headings */
+  color: #c5a059; /* Gold */
+  border-bottom: 1px dotted #c5a059;
+}
+
+#content h2 {
   color: #c5a059; /* Gold */
   border-bottom: 1px dotted #c5a059;
 }
