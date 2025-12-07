@@ -126,7 +126,9 @@ header.primary nav a {
 }
 
 header.primary nav a:hover {
-  background-color: #c5a059; /* Gold Background on Hover */
+  background: linear-gradient(rgba(197, 160, 89, 0.8), rgba(197, 160, 89, 0.8)), url('../img/quest.webp');
+  background-size: cover;
+  background-position: center;
   color: #000;
 }
 
@@ -154,9 +156,29 @@ header.primary nav a:hover {
 
 #carousel figure img {
   width: 100%;
-  height: auto;
+  height: 320px;
+  object-fit: contain;
+  object-position: center center;
   display: block;
   border-radius: 2px;
+  background-color: #111; /* fill bars when aspect ratios differ */
+}
+
+/* Keep carousel images visually consistent across viewports */
+#carousel figure {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  #carousel figure img {
+    height: 220px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  #carousel figure img {
+    height: 160px;
+  }
 }
 
 #carousel figcaption {
