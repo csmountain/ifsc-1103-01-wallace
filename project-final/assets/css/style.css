@@ -131,7 +131,7 @@ header.primary nav a:hover {
 }
 
 /* --- SECTIONS --- */
-#intro h2, #holds-intro h2 { /* Section Headings */
+#intro h2, #holds-intro h2, #carousel h2 { /* Section Headings */
   color: #c5a059; /* Gold */
   border-bottom: 1px dotted #c5a059;
 }
@@ -139,6 +139,40 @@ header.primary nav a:hover {
 #content h2 {
   color: #c5a059; /* Gold */
   border-bottom: 1px dotted #c5a059;
+}
+
+/* --- CAROUSEL SECTION --- */
+#carousel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#carousel figure {
+  margin: 0;
+}
+
+#carousel figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 2px;
+}
+
+#carousel figcaption {
+  font-family: 'Cinzel', serif;
+  text-transform: uppercase;
+  font-size: .7rem;
+  color: #888;
+  margin-top: 5px;
+}
+
+#carousel p {
+  color: #e8e8e8;
+  font-family: "Macondo", serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 10px 0;
 }
 
 /* --- CONTENT / CARDS --- */
@@ -276,6 +310,15 @@ article.widget h2 {
 }
 
 aside .container a { color: #98c1d9; }
+
+/* --- SLICK CAROUSEL DOTS --- */
+.slick-dots li button:before {
+  color: #c5a059; /* Gold color for dots */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #c5a059; /* Gold color for active dot */
+}
 
 /* --- FOOTER --- */
 #colophon {
