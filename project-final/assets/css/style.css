@@ -312,12 +312,20 @@ article.widget h2 {
 aside .container a { color: #98c1d9; }
 
 /* --- SLICK CAROUSEL DOTS --- */
-.slick-dots li button:before {
-  color: #c5a059; /* Gold color for dots */
+.slick-dots li button:before,
+.slick-dots li button::before {
+  color: #ffffff !important; /* Force white color for dots */
+  opacity: 0.55 !important; /* reduced transparency for inactive dots */
 }
 
-.slick-dots li.slick-active button:before {
-  color: #c5a059; /* Gold color for active dot */
+.slick-dots li.slick-active button:before,
+.slick-dots li.slick-active button::before,
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before,
+.slick-dots li button:hover::before,
+.slick-dots li button:focus::before {
+  color: #ffffff !important; /* Active/hover/focus white */
+  opacity: 1 !important; /* fully opaque when active or hovered/focused */
 }
 
 /* --- FOOTER --- */
