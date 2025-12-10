@@ -59,7 +59,7 @@ header.primary {
   /* 1. The "Blending" Trick: 
      We stack a black gradient (0.7 opacity) on TOP of the image URL. 
      This dims the image so it blends into your dark theme. */
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/map.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/home/map.jpg');
   
   /* 2. Positioning: 
      Cover = stretch image to fill the box. 
@@ -126,7 +126,7 @@ header.primary nav a {
 }
 
 header.primary nav a:hover {
-  background: linear-gradient(rgba(197, 160, 89, 0.8), rgba(197, 160, 89, 0.8)), url('../img/quest.webp');
+  background: linear-gradient(rgba(197, 160, 89, 0.8), rgba(197, 160, 89, 0.8)), url('../img/home/quest.webp');
   background-size: cover;
   background-position: center;
   color: #000;
