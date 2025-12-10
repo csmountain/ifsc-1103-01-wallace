@@ -1,14 +1,39 @@
 /* Course Homepage CSS */
 
 body {
-        background-color: #b7c9e2;
+        background-color: #2b2b2b;
         
         /* Use same body font as final project */
         font-family: "Macondo", serif;
+}
+
+/* Set homepage text to white and links to a light baby blue */
+body {
+    color: #ffffff;
+}
+
+/* Link styles (light baby blue) */
+a {
+    color: #bfefff;
+}
+
+a:hover,
+a:focus {
+    color: #9fe6ff;
 }
 
 /* Headings use the same font as the final project and center the main title */
 h1 {
     font-family: 'Cinzel', serif;
     text-align: center;
+}
+
+/* Container to constrain page width and center content */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ffffff;
+    outline: 2px solid #ffff;
+    border-radius: 6px;
 }
